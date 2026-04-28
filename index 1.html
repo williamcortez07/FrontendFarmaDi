@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="continer">
+        <div class="continer-form">
+            <form class="sing-in">
+                <h2>Iniciar sesión</h2>
+                <div class="social-networks">
+                    <ion-icon name="fitness-outline"></ion-icon>
+                </div>
+                <span>Use su correo y contraseña</span>
+                <div class="continer-input">
+                    <ion-icon name="mail-open-outline"></ion-icon>
+                    <input type="email " placeholder="Correo" required>
+                </div>
+                <div class="continer-input">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="password" placeholder="Contraseña" required>
+                </div>
+                <a href="#">¿Olvidaste tu contraseña?</a>
+                <button type="button" class="button" id="btn-login-submit">Iniciar sesión</button>
+            </form>
+        </div>
+        <div class="continer-form">
+            <form class="sing-up">
+                <h2>Registrase</h2>
+                <span>Use su correo para registrase</span>
+                <div class="continer-input">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <input type="text" placeholder="Nombre">
+                </div>
+                <div class="continer-input">
+                    <ion-icon name="mail-open-outline"></ion-icon>
+                    <input type="text" placeholder="Correo">
+                </div>
+                <div class="continer-input">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="text" placeholder="Contraseña">
+                </div>
+                <button class="button">Registrarse</button>
+            </form>
+        </div>
+        <div class="continer-welcome">
+                <div class="welcome-sing-up welcome">
+                    <h3>Bienvenido a Farma-Di</h3>
+                </div>
+                <div class="welcome-sing-in welcome">
+                    <h3>Hola</h3>
+                    <p>Registrese con sus datos.</p>
+                    <button class="button" id="btn-sing-in" >Iniciar sesión</button>
+                </div>
+            </div>
+    </div>
+    <footer class="footer">
+        Siguenos en nuestras paginas de Farma-Di
+    </footer>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
