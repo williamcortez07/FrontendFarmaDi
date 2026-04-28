@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmacia Génesis - Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="logo">
+            <i class="fa-solid fa-square-plus"></i>
+            <div >FARMACIA<br>GÉNESIS</div>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><i class="fa-solid fa-house"></i> Inicio</li>
+            <li class="nav-item"><i class="fa-solid fa-cart-shopping"></i> Ventas</li>
+            <li class="nav-item"><i class="fa-solid fa-boxes-stacked"></i> Inventario</li>
+            <li class="nav-item"><i class="fa-solid fa-chart-line"></i> Reportes</li>
+            <li class="nav-item"><i class="fa-solid fa-tags"></i> Catálogos</li>
+            <li class="nav-item"><i class="fa-solid fa-gear"></i> Ajustes</li>
+        </ul>
+    </aside>
+
+    <main class="main-container">
+        <header class="header">
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="user-actions">
+                <i class="fa-regular fa-circle-user"></i>
+                <i class="fa-regular fa-bell"></i>
+            </div>
+        </header>
+
+        <section class="stats-grid">
+            <div class="stat-card">
+                <h3>ventas del día:</h3>
+                <p>$ 1200</p>
+            </div>
+            <div class="stat-card">
+                <h3>Transacciones</h3>
+                <p>50</p>
+            </div>
+            <div class="stat-card">
+                <h3>stock Bajo:</h3>
+                <p style="color: var(--warning);">20</p>
+            </div>
+            <div class="stat-card">
+                <h3>Próximo a Vencer:</h3>
+                <p style="color: var(--danger);">5</p>
+            </div>
+        </section>
+
+        <section class="action-grid">
+            <div class="action-card">
+                <i class="fa-solid fa-cart-plus" style="color: var(--accent-green);"></i>
+                <span>Nueva venta</span>
+            </div>
+            <div class="action-card">
+                <i class="fa-solid fa-square-plus" style="color: var(--accent-blue);"></i>
+                <span>Ingresar Inventario</span>
+            </div>
+            <div class="action-card">
+                <i class="fa-solid fa-file-lines" style="color: var(--accent-purple);"></i>
+                <span>Generar Reportes</span>
+            </div>
+            <div class="action-card">
+                <i class="fa-solid fa-user-plus" style="color: #3f51b5;"></i>
+                <span>Agregar Usuarios</span>
+            </div>
+        </section>
+    </main>
+
+    <aside class="alerts-panel">
+        <div class="alerts-header">
+            <i class="fa-regular fa-bell"></i> Alertas
+        </div>
+        
+        <div class="alert-item alert-danger">
+            <strong>paracetamol 500mg</strong>
+            <span>vence mañana: Lote #GR30000</span>
+        </div>
+        <div class="alert-item alert-warning">
+            <strong>Alka-Seltzer</strong>
+            <span>Pocas unidades: 9</span>
+        </div>
+        <div class="alert-item alert-warning">
+            <strong>Zepol Resfrios</strong>
+            <span>Pocas unidades: 5</span>
+        </div>
+        <div class="alert-item alert-danger">
+            <strong>Omeprazol 20mg</strong>
+            <span>vence dentro de 3 días: Lote #GI20000</span>
+        </div>
+        <div class="alert-item alert-warning">
+            <strong>omeprazol</strong>
+            <span>Pocas unidades: 7</span>
+        </div>
+        <div class="alert-item alert-orange">
+            <strong>omeprazol</strong>
+            <span>Vence dentro de 9 días: Lote #G21912001</span>
+        </div>
+    </aside>
+
+</body>
+</html>
