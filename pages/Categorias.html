@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Catálogo de Categorías</title>
+		<link rel="stylesheet" href="/css/layout/sidebar.css" />
+		<link rel="stylesheet" href="/css/Categoria.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+	</head>
+	<body>
+		<!-- Sidebar -->
+		<aside class="sidebar">
+			<div class="logo">
+				<i class="fa-solid fa-square-plus"></i>
+				<div>FARMACIA<br />GÉNESIS</div>
+			</div>
+			<ul class="nav-menu">
+				<li class="nav-item"><i class="fa-solid fa-house"></i> Inicio</li>
+				<li class="nav-item"><i class="fa-solid fa-cart-shopping"></i> Ventas</li>
+				<li class="nav-item"><i class="fa-solid fa-boxes-stacked"></i> Inventario</li>
+				<li class="nav-item"><i class="fa-solid fa-chart-line"></i> Reportes</li>
+				<li class="nav-item" style="background:rgba(255,255,255,0.08)"><i class="fa-solid fa-tags"></i> Catálogos</li>
+				<li class="nav-item"><i class="fa-solid fa-gear"></i> Ajustes</li>
+			</ul>
+		</aside>
+
+		<main class="main-content">
+			<div class="header-concentracion">
+				<h2>Catálogo de Categorías</h2>
+				<input class="search-input" type="text" placeholder="Buscar categoría..." />
+			</div>
+
+			<div class="crear-concentracion-box">
+				<h3>Crear Nueva Categoría</h3>
+				<form id="form-categoria">
+					<input type="text" placeholder="Nombre de la categoría" required />
+					<button class="btn-azul" type="submit"><i class="fa-solid fa-plus"></i> Agregar Categoría</button>
+				</form>
+			</div>
+
+			<section class="concentraciones-section">
+				<div class="concentraciones-header">Categorías</div>
+				<div class="concentraciones-list">
+					<div class="card-concentracion">
+						<span class="valor">Analgésicos</span>
+						<span class="categoria">Medicamentos</span>
+						<span class="productos">Productos: 12</span>
+						<button class="delete-btn" title="Eliminar"><i class="fa-solid fa-trash"></i></button>
+					</div>
+					<div class="card-concentracion">
+						<span class="valor">Antibióticos</span>
+						<span class="categoria">Medicamentos</span>
+						<span class="productos">Productos: 8</span>
+						<button class="delete-btn" title="Eliminar"><i class="fa-solid fa-trash"></i></button>
+					</div>
+					<div class="card-concentracion">
+						<span class="valor">Vitaminas</span>
+						<span class="categoria">Suplementos</span>
+						<span class="productos">Productos: 5</span>
+						<button class="delete-btn" title="Eliminar"><i class="fa-solid fa-trash"></i></button>
+					</div>
+					<div class="card-concentracion">
+						<span class="valor">Antigripales</span>
+						<span class="categoria">Medicamentos</span>
+						<span class="productos">Productos: 7</span>
+						<button class="delete-btn" title="Eliminar"><i class="fa-solid fa-trash"></i></button>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
